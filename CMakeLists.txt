@@ -14,15 +14,17 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+        ctunes.cpp
+        ctunes.h
+        ctunes.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Examen1
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        genero.h
+        invalidrateexception.h invalidrateexception.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Examen1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
