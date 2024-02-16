@@ -1,6 +1,6 @@
 #ifndef GENERO_H
 #define GENERO_H
-
+#include <string>
 enum class Genero {
     POP,
     ROCK,
@@ -10,6 +10,9 @@ enum class Genero {
     ELECTRONICA,
     RANCHERA
 };
+QString enumToString(Genero genre);
+
+
 
 class GeneroMusical
 {

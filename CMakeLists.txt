@@ -24,7 +24,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         genero.h
-        invalidrateexception.h invalidrateexception.cpp
+        InvalidRateException.h
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Examen1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
